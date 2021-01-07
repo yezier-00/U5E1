@@ -1,0 +1,35 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		// TODO Auto-generated method stub
+List<> lista=new ArrayList<>();
+System.out.println("dame lo elementos a ordenar:");
+for (int i = 0; i <5; i++) {
+	int elemento=sc.nextInt();
+	lista.add(elemento);
+}
+System.out.println("Lista sin ordenar:");
+
+	for (int i = 0; i < lista-1; i++) {
+		
+		for (int j = 0; j < lista-1; j++) {
+			if(lista[j]>lista[j+1]) {
+				int aux=lista[j+1];
+				lista[j+1]=lista[j];
+				lista[j]=aux;
+			}
+		}
+	}
+	System.out.println("");
+	System.out.println("lista ordenada:");
+	for (int i = 0; i < 5; i++) {
+		System.out.println(lista[i]+" ");
+	}
+
+	}//main
+
+}//class
